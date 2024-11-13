@@ -28,4 +28,4 @@ jobs:
 
       - name: Copy folder from local to S3
         run: |
-          aws s3 cp $SOURCE_PATH s3://$BUCKET/$S3_PATH --recursive
+          aws s3 sync $SOURCE_PATH s3://$BUCKET/$S3_PATH --exclude "*" --include "*.py"
