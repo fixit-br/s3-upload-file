@@ -7,7 +7,7 @@ on:
   #     - main 
   
 env:
-  BUCKET: airflow
+  BUCKET: tele-bot
   S3_PATH: dags
   SOURCE_PATH: ./dags
 
